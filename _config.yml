@@ -9,15 +9,8 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-# Theme settings
-theme: minima
+# Build settings
 show_excerpts: true
-
-# Collections
-collections:
-  posts:
-    output: true
-    permalink: /posts/:name/
 
 # Exclude from processing
 exclude:
