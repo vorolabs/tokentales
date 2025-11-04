@@ -1,0 +1,32 @@
+title: AI & LLMs
+description: A clean, aesthetic blog/newsletter about AI research, LLMs, and tooling.
+url: https://yourusername.github.io
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Theme settings
+theme: minima
+show_excerpts: true
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /posts/:name/
+
+# Exclude from processing
+exclude:
+  - node_modules
+  - package.json
+  - package-lock.json
+  - next.config.mjs
+  - tsconfig.json
+  - .git
+  - .github
+  - README.md
+

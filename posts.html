@@ -1,0 +1,26 @@
+---
+layout: default
+title: Posts
+---
+
+<h1>All Posts</h1>
+
+<ul class="posts-list">
+  {% for post in site.posts %}
+  <li>
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <div class="meta">
+      {% if post.date %}{{ post.date | date: "%B %d, %Y" }}{% endif %}
+      {% if post.tags %}
+        {% for tag in post.tags %}
+        <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      {% endif %}
+    </div>
+    {% if post.description %}
+    <p class="excerpt">{{ post.description }}</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
