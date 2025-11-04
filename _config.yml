@@ -1,7 +1,7 @@
 title: AI & LLMs
 description: A clean, aesthetic blog/newsletter about AI research, LLMs, and tooling.
-url: https://yourusername.github.io
-baseurl: ""
+url: https://vorolabs.github.io
+baseurl: /tokentales
 
 # Build settings
 markdown: kramdown
